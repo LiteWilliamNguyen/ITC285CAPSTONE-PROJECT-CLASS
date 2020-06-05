@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Monk</h2>
+<table class="table">
+<tr>
+    <th>Monk Name</th>
+    <th>Monk Description</th>
+</tr>
+{% for p in monk_list %}
+<tr>
+    <td>{{p.monkname}}</td>
+    <td>{{p.monkage}}</td>
+    <td>{{p.user}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
